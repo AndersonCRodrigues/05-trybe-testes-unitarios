@@ -25,7 +25,7 @@ Escreva pelo menos seis testes para essa função garantindo que a implementaç�
 Parâmetros:
   - Uma string.
 
-Comportamento: 
+Comportamento:
   - getCharacter('Arya');
 
 Retorno:
@@ -69,3 +69,5 @@ const getCharacter = (name) => {
 };
 
 module.exports = getCharacter;
+
+// console.log(getCharacter('Melissandre'));
