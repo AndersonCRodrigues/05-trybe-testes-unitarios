@@ -94,9 +94,8 @@
 // DICA: para isso, você precisará percorrer tanto o objeto da chave `food` quanto o objeto da chave `drink`.
 
 const createMenu = (obj) => {
-  const menu = {
-    fetchMenu: () => obj,
-  };
+  const menu = {};
+  Object.assign(menu, { fetchMenu: () => obj });
   Object.assign(menu, { consumption: [] });
   Object.assign(menu, { order: (pedido) => menu.consumption.push(pedido) });
   Object.assign(menu, { pay: () => {
