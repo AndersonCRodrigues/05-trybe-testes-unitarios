@@ -105,7 +105,7 @@ const createMenu = (obj) => {
     consumo.forEach((item) => {
       for (let key in menuItem) { if (item === key) total += menuItem[key]; }
     });
-    return total;
+    return total * 1.1;
     },
   });
   return menu;
